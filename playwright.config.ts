@@ -25,12 +25,12 @@ export default defineConfig({
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    baseURL: 'https://qauto.forstudy.space',
-    httpCredentials: {
-      username: 'guest',
-      password: 'welcome2qauto',
-    },
-    //trace: 'on-first-retry',
+  //   baseURL: 'https://qauto.forstudy.space',
+  //   httpCredentials: {
+  //     username: 'guest',
+  //     password: 'welcome2qauto',
+  //   },
+    trace: 'on-first-retry',
   },
 
   /* Configure projects for major browsers */
@@ -63,7 +63,7 @@ export default defineConfig({
     /* Test against branded browsers. */
     {
       name: 'Microsoft Edge',
-      use: { ...devices['Desktop Edge'], channel: 'msedge' },
+      use: { ...devices['Desktop Edge']/*, channel: 'msedge' */},
     },
     // {
     //   name: 'Google Chrome',
