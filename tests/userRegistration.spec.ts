@@ -175,6 +175,50 @@ test.describe('User registration', () => {
                 await registrationForm.verifyErrorMessageTextAndRedColor('Passwords do not match');
                 await registrationForm.verifyFieldIsHighlightedByBorderColor('ReEnterPassword');
             });
-        });    
+        });
+        test.describe('Register button validations: some field is empty', () => {
+            test('Empty Name, other are correct', async ({ page }) => {
+                await registrationForm.fillRegistrationForm('', testUser.lastName, testUser.email, testUser.password, testUser.password);
+                await registrationForm.verifyRegisterButtonIsDisabled();
+            });
+            test('Empty Last Name, other are correct', async ({ page }) => {
+                await registrationForm.fillRegistrationForm(testUser.firstName, '', testUser.email, testUser.password, testUser.password);
+                await registrationForm.verifyRegisterButtonIsDisabled();
+            });
+            test('Empty Email, other are correct', async ({ page }) => {
+                await registrationForm.fillRegistrationForm(testUser.firstName, testUser.lastName, '', testUser.password, testUser.password);
+                await registrationForm.verifyRegisterButtonIsDisabled();
+            });
+            test('Empty Password, other are correct', async ({ page }) => {
+                await registrationForm.fillRegistrationForm(testUser.firstName, testUser.lastName, testUser.email, '', testUser.password);
+                await registrationForm.verifyRegisterButtonIsDisabled();
+            });
+            test('Empty Re-Enter Password, other are correct', async ({ page }) => {
+                await registrationForm.fillRegistrationForm(testUser.firstName, testUser.lastName, testUser.email, testUser.password, '');
+                await registrationForm.verifyRegisterButtonIsDisabled();
+            });
+        });
+        test.describe('Register button validations: some field is incorrect', () => {
+            test('Name is incorrect, other are correct', async ({ page }) => {
+                await registrationForm.fillRegistrationForm('John Gaspar', testUser.lastName, testUser.email, testUser.password, testUser.password);
+                await registrationForm.verifyRegisterButtonIsDisabled();
+            });
+            test('Last Name is incorrect, other are correct', async ({ page }) => {
+                await registrationForm.fillRegistrationForm(testUser.firstName, 'John Gaspar', testUser.email, testUser.password, testUser.password);
+                await registrationForm.verifyRegisterButtonIsDisabled();
+            });
+            test('Email is incorrect, other are correct', async ({ page }) => {
+                await registrationForm.fillRegistrationForm(testUser.firstName, testUser.lastName, 'john@gaspar@gmail.com', testUser.password, testUser.password);
+                await registrationForm.verifyRegisterButtonIsDisabled();
+            });
+            test('Password is incorrect, other are correct', async ({ page }) => {
+                await registrationForm.fillRegistrationForm(testUser.firstName, testUser.lastName, testUser.email, 'Sj4v', testUser.password);
+                await registrationForm.verifyRegisterButtonIsDisabled();
+            });
+            test('Re-Enter Password is incorrect, other are correct', async ({ page }) => {
+                await registrationForm.fillRegistrationForm(testUser.firstName, testUser.lastName, testUser.email, testUser.password, 'Sj4v');
+                await registrationForm.verifyRegisterButtonIsDisabled();
+            });
+        });   
     });
 });

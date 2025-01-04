@@ -74,6 +74,10 @@ export class RegistrationForm {
         expect(color).toBe('rgb(220, 53, 69)');
     }
 
+    async verifyRegisterButtonIsDisabled(){
+        await expect (this.btnRegister).toBeDisabled();
+    }
+
     /**
      * 
      * @param fieldName - should be one of this: Name, LastName, Email, Password, ReEnterPassword
@@ -98,8 +102,16 @@ export class RegistrationForm {
             fieldLocator = this.fieldReEnterPassword;
         }
 
+        await this.page.waitForFunction(
+            (selector) => {
+                const el = document.querySelector(selector as string);
+                return el && getComputedStyle(el).borderColor === 'rgb(220, 53, 69)';
+            },
+            '.form-control.is-invalid'
+        );
+        
         const borderColor = await fieldLocator.evaluate(el => getComputedStyle(el).borderColor);
-        //expect(borderColor).toBe('rgb(220, 53, 69)');
+        expect(borderColor).toBe('rgb(220, 53, 69)');
 
     }
 }
