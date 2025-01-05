@@ -1,0 +1,1397 @@
+{
+  "config": {
+    "configFile": "F:\\AQA_JS\\Playwright_Hillel\\playwright.config.ts",
+    "rootDir": "F:/AQA_JS/Playwright_Hillel/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "playwright-html-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "playwright-report.json"
+        }
+      ],
+      [
+        "F:\\AQA_JS\\Playwright_Hillel\\custom-json-reporter.ts",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "F:/AQA_JS/Playwright_Hillel/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "F:/AQA_JS/Playwright_Hillel/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "F:/AQA_JS/Playwright_Hillel/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "F:/AQA_JS/Playwright_Hillel/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "F:/AQA_JS/Playwright_Hillel/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "Mobile Chrome",
+        "name": "Mobile Chrome",
+        "testDir": "F:/AQA_JS/Playwright_Hillel/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "F:/AQA_JS/Playwright_Hillel/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "Microsoft Edge",
+        "name": "Microsoft Edge",
+        "testDir": "F:/AQA_JS/Playwright_Hillel/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.49.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "userRegistration.spec.ts",
+      "file": "userRegistration.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "User registration",
+          "file": "userRegistration.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Success scenario",
+              "file": "userRegistration.spec.ts",
+              "line": 23,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "User registration with valid data",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "status": "passed",
+                          "duration": 5512,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-01-05T09:38:41.315Z",
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "4cae8599c15cdc2ff012-9f70c3fae35ec9fc9d7a",
+                  "file": "userRegistration.spec.ts",
+                  "line": 24,
+                  "column": 13
+                }
+              ]
+            },
+            {
+              "title": "Fail scenarios",
+              "file": "userRegistration.spec.ts",
+              "line": 36,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "User already exists",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "status": "passed",
+                          "duration": 2268,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-01-05T09:38:46.992Z",
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "4cae8599c15cdc2ff012-0c5e0bdf1e9fc5b4ce82",
+                  "file": "userRegistration.spec.ts",
+                  "line": 37,
+                  "column": 13
+                }
+              ],
+              "suites": [
+                {
+                  "title": "Name field validations",
+                  "file": "userRegistration.spec.ts",
+                  "line": 43,
+                  "column": 14,
+                  "specs": [
+                    {
+                      "title": "Empty field: Name is required",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2260,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:38:49.272Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-9c6347235bed01f40b93",
+                      "file": "userRegistration.spec.ts",
+                      "line": 44,
+                      "column": 17
+                    },
+                    {
+                      "title": "Wrong data: Name is invalid",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2377,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:38:51.544Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-4639fffc1b7413795647",
+                      "file": "userRegistration.spec.ts",
+                      "line": 49,
+                      "column": 17
+                    },
+                    {
+                      "title": "Wrong lenght (1 character) of Name",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2292,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:38:53.935Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-ea0d18ca5447d5bd4473",
+                      "file": "userRegistration.spec.ts",
+                      "line": 54,
+                      "column": 17
+                    },
+                    {
+                      "title": "Wrong lenght (21 characters) of Name",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2205,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:38:56.239Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-4ccb52835f3e3ff77d0e",
+                      "file": "userRegistration.spec.ts",
+                      "line": 59,
+                      "column": 17
+                    }
+                  ]
+                },
+                {
+                  "title": "Last Name field validations",
+                  "file": "userRegistration.spec.ts",
+                  "line": 65,
+                  "column": 14,
+                  "specs": [
+                    {
+                      "title": "Empty field: Last Name is required",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2244,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:38:58.454Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-5c9a357dcaa47a1a609b",
+                      "file": "userRegistration.spec.ts",
+                      "line": 66,
+                      "column": 17
+                    },
+                    {
+                      "title": "Wrong data: Last Name is invalid",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2375,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:39:00.708Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-48c877f7bdfebe419d7b",
+                      "file": "userRegistration.spec.ts",
+                      "line": 71,
+                      "column": 17
+                    },
+                    {
+                      "title": "Wrong lenght (1 character) of Last Name",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2401,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:39:03.093Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-b688c25de3b6eb0d3dd9",
+                      "file": "userRegistration.spec.ts",
+                      "line": 76,
+                      "column": 17
+                    },
+                    {
+                      "title": "Wrong lenght (21 characters) of Last Name",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2678,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:39:05.505Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-7f9249e9433d37969e6a",
+                      "file": "userRegistration.spec.ts",
+                      "line": 81,
+                      "column": 17
+                    }
+                  ]
+                },
+                {
+                  "title": "Email field validation",
+                  "file": "userRegistration.spec.ts",
+                  "line": 87,
+                  "column": 14,
+                  "specs": [
+                    {
+                      "title": "Empty field: Email is required",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2237,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:39:08.191Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-fb3540414ce318c99079",
+                      "file": "userRegistration.spec.ts",
+                      "line": 88,
+                      "column": 17
+                    },
+                    {
+                      "title": "Wrong data (no @)",
+                      "ok": true,
+                      "tags": [
+                        ")"
+                      ],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2159,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:39:10.437Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-1e1c09bdb7d4597c8b26",
+                      "file": "userRegistration.spec.ts",
+                      "line": 93,
+                      "column": 17
+                    },
+                    {
+                      "title": "Wrong data (two @)",
+                      "ok": true,
+                      "tags": [
+                        ")"
+                      ],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2272,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:39:12.604Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-7134c55b5975c427d932",
+                      "file": "userRegistration.spec.ts",
+                      "line": 98,
+                      "column": 17
+                    },
+                    {
+                      "title": "Wrong data (no dot after @)",
+                      "ok": true,
+                      "tags": [
+                        ")"
+                      ],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2359,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:39:14.887Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-415573378fdc3115d0dd",
+                      "file": "userRegistration.spec.ts",
+                      "line": 103,
+                      "column": 17
+                    }
+                  ]
+                },
+                {
+                  "title": "Password field validation",
+                  "file": "userRegistration.spec.ts",
+                  "line": 109,
+                  "column": 14,
+                  "specs": [
+                    {
+                      "title": "Empty field: Password is required",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2260,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:39:17.254Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-40a1cb2552d3cc14ebbe",
+                      "file": "userRegistration.spec.ts",
+                      "line": 110,
+                      "column": 17
+                    },
+                    {
+                      "title": "Wrong lenght of password (7 characters)",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2320,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:39:19.523Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-4194b8c9aff2e37cf556",
+                      "file": "userRegistration.spec.ts",
+                      "line": 115,
+                      "column": 17
+                    },
+                    {
+                      "title": "Wrong lenght of password (16 characters)",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2410,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:39:21.852Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-841c2184b0bf969c9228",
+                      "file": "userRegistration.spec.ts",
+                      "line": 120,
+                      "column": 17
+                    },
+                    {
+                      "title": "Wrong data (no capital letter)",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2194,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:39:24.270Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-42c74fee9eec024483bc",
+                      "file": "userRegistration.spec.ts",
+                      "line": 125,
+                      "column": 17
+                    },
+                    {
+                      "title": "Wrong data (no small letter)",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2390,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:39:26.472Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-5a693d47594a240f145b",
+                      "file": "userRegistration.spec.ts",
+                      "line": 130,
+                      "column": 17
+                    },
+                    {
+                      "title": "Wrong data (no integer)",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2157,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:39:28.870Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-66f465580ae96f117bc2",
+                      "file": "userRegistration.spec.ts",
+                      "line": 135,
+                      "column": 17
+                    }
+                  ]
+                },
+                {
+                  "title": "Re-Enter Password field validation",
+                  "file": "userRegistration.spec.ts",
+                  "line": 141,
+                  "column": 14,
+                  "specs": [
+                    {
+                      "title": "Empty field: Re-Enter Password is required",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2575,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:39:31.036Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-20b5cee6d3ecce8a849c",
+                      "file": "userRegistration.spec.ts",
+                      "line": 142,
+                      "column": 17
+                    },
+                    {
+                      "title": "Wrong lenght of Re-Enter Password (7 characters)",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2243,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:39:33.619Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-bab73046d5fff9c4a834",
+                      "file": "userRegistration.spec.ts",
+                      "line": 147,
+                      "column": 17
+                    },
+                    {
+                      "title": "Wrong lenght of Re-Enter Password (16 characters)",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2224,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:39:35.870Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-a5c2ba94e86ae7497992",
+                      "file": "userRegistration.spec.ts",
+                      "line": 152,
+                      "column": 17
+                    },
+                    {
+                      "title": "Wrong data of Re-Enter Password (no capital letter)",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2554,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:39:38.106Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-14466caeabbc8249cd7d",
+                      "file": "userRegistration.spec.ts",
+                      "line": 157,
+                      "column": 17
+                    },
+                    {
+                      "title": "Wrong data of Re-Enter Password(no small letter)",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2358,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:39:40.669Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-3287b39be3beb1cdb8ba",
+                      "file": "userRegistration.spec.ts",
+                      "line": 162,
+                      "column": 17
+                    },
+                    {
+                      "title": "Wrong data of Re-Enter Password(no integer)",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2672,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:39:43.035Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-b250661c1485f393e5f4",
+                      "file": "userRegistration.spec.ts",
+                      "line": 167,
+                      "column": 17
+                    },
+                    {
+                      "title": "Match: Password and Re-Enter password are not the same",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2275,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:39:45.719Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-02a65f4fccd86e182495",
+                      "file": "userRegistration.spec.ts",
+                      "line": 172,
+                      "column": 17
+                    }
+                  ]
+                },
+                {
+                  "title": "Register button validations: some field is empty",
+                  "file": "userRegistration.spec.ts",
+                  "line": 179,
+                  "column": 14,
+                  "specs": [
+                    {
+                      "title": "Empty Name, other are correct",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2374,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:39:48.002Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-968b96e0e00e3a3e6953",
+                      "file": "userRegistration.spec.ts",
+                      "line": 180,
+                      "column": 17
+                    },
+                    {
+                      "title": "Empty Last Name, other are correct",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2462,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:39:50.384Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-314093bbd4566ea85d65",
+                      "file": "userRegistration.spec.ts",
+                      "line": 184,
+                      "column": 17
+                    },
+                    {
+                      "title": "Empty Email, other are correct",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2143,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:39:52.855Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-62469e6afa5efb57c868",
+                      "file": "userRegistration.spec.ts",
+                      "line": 188,
+                      "column": 17
+                    },
+                    {
+                      "title": "Empty Password, other are correct",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2209,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:39:55.005Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-a11d58f5fb792e26b002",
+                      "file": "userRegistration.spec.ts",
+                      "line": 192,
+                      "column": 17
+                    },
+                    {
+                      "title": "Empty Re-Enter Password, other are correct",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2171,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:39:57.223Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-cbb633b14166a9836313",
+                      "file": "userRegistration.spec.ts",
+                      "line": 196,
+                      "column": 17
+                    }
+                  ]
+                },
+                {
+                  "title": "Register button validations: some field is incorrect",
+                  "file": "userRegistration.spec.ts",
+                  "line": 201,
+                  "column": 14,
+                  "specs": [
+                    {
+                      "title": "Name is incorrect, other are correct",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2129,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:39:59.402Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-1acdc5556e05449e6914",
+                      "file": "userRegistration.spec.ts",
+                      "line": 202,
+                      "column": 17
+                    },
+                    {
+                      "title": "Last Name is incorrect, other are correct",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2129,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:40:01.540Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-c9fc8b034aed8dd93f3e",
+                      "file": "userRegistration.spec.ts",
+                      "line": 206,
+                      "column": 17
+                    },
+                    {
+                      "title": "Email is incorrect, other are correct",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2286,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:40:03.678Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-9be02f1b85b34cd2f577",
+                      "file": "userRegistration.spec.ts",
+                      "line": 210,
+                      "column": 17
+                    },
+                    {
+                      "title": "Password is incorrect, other are correct",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2137,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:40:05.972Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-ebca5e90c4355a07d2ad",
+                      "file": "userRegistration.spec.ts",
+                      "line": 214,
+                      "column": 17
+                    },
+                    {
+                      "title": "Re-Enter Password is incorrect, other are correct",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 30000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "chromium",
+                          "projectName": "chromium",
+                          "results": [
+                            {
+                              "workerIndex": 0,
+                              "status": "passed",
+                              "duration": 2419,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "startTime": "2025-01-05T09:40:08.117Z",
+                              "attachments": []
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "4cae8599c15cdc2ff012-fc968ae4b61ebe805cb6",
+                      "file": "userRegistration.spec.ts",
+                      "line": 218,
+                      "column": 17
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-01-05T09:38:39.734Z",
+    "duration": 90951.118,
+    "expected": 37,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
