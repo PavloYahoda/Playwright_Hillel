@@ -25,11 +25,11 @@ test.describe('User registration', () => {
             garagePage = new GaragePage(page);
             await registrationForm.fillRegistrationForm(testUser.firstName, testUser.lastName, testUser.email, testUser.password, testUser.password);
             await registrationForm.submitRegistrationForm();
-            await page.waitForLoadState('networkidle');
-            const pageTitle = await garagePage.getTitle();
             const pageAlert = await garagePage.getAlertText();
-            expect (pageTitle).toBe('Garage');
             expect (pageAlert).toBe('Registration complete');
+            await page.waitForURL('**/garage');
+            const pageTitle = await garagePage.getTitle();
+            expect (pageTitle).toBe('Garage');
         });
     });
 
